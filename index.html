@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-tip@0.9.1/dist/index.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <link rel="stylesheet" href="refresh.css">
+<script src="topojson.js"></script>
+<script src="d3-tip.js"></script>
+<script defer src="logic.js" defer />
+<script src="logic.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src= 
+	"https://d3js.org/d3-geo-projection.v2.min.js"> 
+	</script> 
+<title>UK Map using D3.js</title>
+ </head> 
+<body>
+
+<header>
+  <div id="d1">
+    <h1>Geographical Data Visualization using D3.js</h1>
+  </div>
+</header>
+<div style="display: flex; align-items: center;margin: auto;
+  width: 50%;
+  padding: 10px;">
+<h1 style="margin: auto;">Towns in UK with Population</h1>
+</div>
+<div style="display:flex; align-items: center; " >
+  
+<!--  These styles create the bounding box-->
+  <div style="overflow-y: scroll;overflow-x:scroll ; border: 1px solid black; background: rgba(0,194,126,.5);  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:auto;" >
+  <div class="slidecontainer" id="container" >
+  <div >
+  <input type="range" min="1" max="500" value="50" class="slider" id="myRange">
+  <button id="button1" onclick="callGetValue();" class="btn_1" >Refresh</button>
+        <p style="font-size: larger; position: relative; text-align: center;">Towns: <span id="demo">10</span></p>
+      </div>
+</div>
+    <div class="home" ></div>
+  </div>
+
+  </div>
+
+<script>
+   const slideValue = document.querySelector("span");
+const inputSlider = document.querySelector("input");
+inputSlider.oninput = (()=>{
+  let value = inputSlider.value;
+  slideValue.textContent = value;
+  slideValue.style.left = (value/5) + "%";
+  slideValue.classList.add("show");
+});
+inputSlider.onblur = (()=>{
+  slideValue.classList.remove("show");
+});
+   </script>
+   
+<footer>
+ <p>&copy;2023 Zohaib Amjad</p>
+</footer>
+</body>
+</html>
+
+
+

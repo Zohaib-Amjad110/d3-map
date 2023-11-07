@@ -1,0 +1,179 @@
+.slidecontainer {
+  width: 70%; /* Width of the outside container */
+}
+
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.country {
+  stroke-width: 1;
+  stroke: darkslategrey;
+  fill: white;
+  transition: all 0.25s ease-in-out;
+}
+
+.country:hover {
+  cursor: pointer;
+  fill: #555555;
+}
+div.tooltip {
+  text-align: center;
+  min-width: 60px;
+  transition: opacity 0.25s ease-in-out;
+  min-height: 28px;
+  padding: 8px 12px;
+  font: 12px sans-serif;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+button {
+  background: transparent;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 4px 16px;
+  transition: all 0.25s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 1px solid darkgray;
+}
+
+.subunit.SCT { fill: #e7d66c; }
+.subunit.WLS { fill: #FEAA7E; }
+.subunit.NIR { fill: #FFBE6B; }
+.subunit.ENG { fill: #B5C57A; }
+.subunit.IRL { fill: #ABBAAE; }
+.subunit-label {
+fill: #777;
+fill-opacity: .5;
+font-size: 20px;
+font-weight: 300;
+text-anchor: middle;
+}
+.subunit text {
+fill: #777;
+fill-opacity: .5;
+font-size: 20px;
+font-weight: 300;
+text-anchor: middle;
+}
+
+.place,
+.place-label {
+fill: #444;
+}
+
+text {
+font-size: 10px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+pointer-events: none;
+}
+
+.d3-tip {
+line-height: 1;
+font-weight: bold;
+padding: 12px;
+background: rgba(255, 255, 255, 0.8);
+color: hsl(0, 0%, 0%);
+border-radius: 15px;
+}
+
+.hover {
+fill: yellow;   
+}
+body {
+background-image: url('https://www.transparenttextures.com/patterns/arches.png');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+font-family: 'Arial', sans-serif;
+color: #333;
+animation: backgroundAnimation 20s infinite;
+}
+
+@keyframes backgroundAnimation {
+0% { background-position: 0 0; }
+50% { background-position: 100% 100%; }
+100% { background-position: 0 0; }
+}
+
+button {
+transition: transform 0.3s, background-color 0.3s;
+font-family: 'Arial', sans-serif;
+color: #333;
+border: 1px solid #ccc;
+padding: 8px 15px;
+text-transform: uppercase;
+font-size: 12px;
+cursor: pointer;
+}
+
+button:hover {
+transform: scale(1.05);
+background-color: #f0f0f0;
+}
+
+.slider {
+transition: transform 0.5s;  }
+
+.slider:hover {
+transform: translateX(10px);
+}
+header{
+  background-color: #4a2b4f;
+  color: white; 
+  padding: 20px 0; 
+  text-align: center; 
+  position: relative;
+}
+.d1{
+
+  max-width: 1200px; margin: 0 auto; padding: 0 20px;
+}
+.slidecontainer{
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  background-color: #f0f0f0;
+  
+}
+.btn1{
+  text-align: right;
+}
